@@ -1,0 +1,136 @@
+You are a senior frontend engineer and product designer.
+
+Build a COMPLETE, PRODUCTION-READY frontend for an Indian wholesale & retail jewelry business called "Suhag Bindi Store".
+
+⚙️ TECH STACK (MANDATORY)
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Lucide icons
+- next/font/google for fonts
+- Responsive (mobile-first)
+- Clean, minimal, scalable code
+
+────────────────────────
+🎯 BUSINESS CONTEXT
+Suhag Bindi Store is a Varanasi-based manufacturer & wholesaler of:
+- Fancy bindi
+- Plain bindi (multiple sizes)
+- Mangalsutra
+- Chains & lockets
+- Bracelets
+- Earrings
+- Nazaraiya (children jewelry)
+- Crystal mala
+
+This is a B2B + B2C catalogue website.
+❌ Do NOT show prices.
+✅ Use enquiry-based flow instead of checkout.
+
+────────────────────────
+🏗️ WEBSITE STRUCTURE (TWO SIDES)
+
+PUBLIC (Customer Side):
+- Home (/)
+- Products (/products)
+- About (/about)
+- Contact (/contact)
+
+ADMIN (Client Side – UI ONLY, no backend):
+- Login (/admin/login)
+- Dashboard (/admin/dashboard)
+- Products management UI (/admin/products)
+- Enquiries UI (/admin/enquiries)
+
+Use route groups: (public) and (admin)
+
+────────────────────────
+🎨 DESIGN SYSTEM (STRICT)
+
+Color palette:
+- Primary: Deep Maroon (#7A1F2B)
+- Accent: Gold (#D4AF37)
+- Background: Warm off-white (#FAF7F2)
+
+Typography:
+- Headings: Playfair Display
+- Body: Poppins
+
+Design style:
+- Traditional Indian elegance + modern minimal UI
+- Generous whitespace
+- Large product images
+- Clean typography
+- Luxury ethnic feel
+
+────────────────────────
+🧩 SHADCN/UI COMPONENTS TO USE
+- Button
+- Card
+- Badge
+- Tabs
+- Input
+- Textarea
+- Dialog
+- Sheet
+- Table
+- DropdownMenu
+- Toast
+
+────────────────────────
+📄 PAGE REQUIREMENTS
+
+HOME PAGE:
+- Hero section with headline & CTA
+- Category grid (bindi, jewelry types)
+- Featured products grid
+- “Why Choose Us” section
+- Instagram preview strip (UI only)
+- Footer with contact info & GSTIN
+
+PRODUCTS PAGE:
+- Tabs for categories
+- Product cards with image, name, category badge
+- “Enquire Now” button (opens dialog form)
+
+ABOUT PAGE:
+- Business story
+- Owner: Surendra Kumar Verma
+- Handler: Satyam Verma
+- Location: Varanasi
+- Wholesale manufacturing focus
+
+CONTACT PAGE:
+- Address
+- Phone numbers
+- Email
+- Instagram handle
+- Contact form UI
+
+ADMIN DASHBOARD:
+- Sidebar layout
+- Stats cards (mock data)
+- Products table (mock data)
+- Enquiries table (mock data)
+- Clean shadcn dashboard UI
+
+────────────────────────
+🧠 UX RULES
+- No prices anywhere
+- All CTAs lead to enquiry
+- WhatsApp-style primary CTA tone
+- Clear trust signals (GSTIN, location)
+
+────────────────────────
+📦 OUTPUT EXPECTATIONS
+- Full Next.js App Router folder structure
+- Reusable components
+- Tailwind utility classes (no inline CSS)
+- Type-safe props
+- Dummy data where backend is required
+- Code should run immediately after `npm install`
+
+DO NOT explain.
+DO NOT summarize.
+JUST GENERATE THE CODE.
