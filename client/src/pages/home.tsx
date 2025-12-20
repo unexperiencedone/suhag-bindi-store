@@ -13,12 +13,13 @@ export default function Home() {
     <PublicLayout>
       {/* Hero Section */}
       <section className="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 bg-black/50" />
+       <div
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: `url(${heroImage})` }}
+         >
+        <div className="absolute inset-0 bg-black/50 pointer-events-none" />
         </div>
+
         
         <div className="relative z-10 container text-center text-white px-4 animate-in fade-in zoom-in duration-700">
           <h2 className="text-lg md:text-xl uppercase tracking-[0.3em] mb-4 text-accent font-medium">
@@ -47,16 +48,16 @@ export default function Home() {
 
       {/* Categories Grid */}
       <section className="py-20 bg-background">
-        <div className="container px-4">
+        <div className="w-full max-w-none px-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">Our Collections</h2>
             <div className="h-1 w-20 bg-accent mx-auto rounded-full" />
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid gap-8 grid-cols-[repeat(auto-fit,minmax(220px,1fr))]">
             {CATEGORIES.map((cat) => (
               <Link key={cat.id} href={`/products?category=${cat.id}`}>
-                <div className="group cursor-pointer">
+                <div className="group cursor-pointer w-full">
                   <div className="aspect-square overflow-hidden rounded-2xl mb-4 relative shadow-md">
                     <img 
                       src={cat.image} 
@@ -79,31 +80,50 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20 bg-white">
-        <div className="container px-4">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-2">Featured Products</h2>
-              <p className="text-muted-foreground">Handpicked bestsellers just for you</p>
-            </div>
-            <Link href="/products">
-              <Button variant="link" className="text-accent hover:text-primary hidden md:flex">View All Products &rarr;</Button>
-            </Link>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-          
-          <div className="mt-12 text-center md:hidden">
-            <Link href="/products">
-              <Button variant="outline" className="border-primary text-primary">View All Products</Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Featured Products */}
+<section className="py-20 bg-white">
+  <div className="w-full max-w-none px-10">
+
+    {/* Header */}
+    <div className="flex justify-between items-end mb-12">
+      <div>
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-2">
+          Featured Products
+        </h2>
+        <p className="text-muted-foreground">
+          Handpicked bestsellers just for you
+        </p>
+      </div>
+
+      <Link href="/products">
+        <Button
+          variant="link"
+          className="text-accent hover:text-primary hidden md:flex"
+        >
+          View All Products →
+        </Button>
+      </Link>
+    </div>
+
+    {/* Products Grid */}
+    <div className="grid gap-8 grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
+      {featuredProducts.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+
+    {/* Mobile button */}
+    <div className="mt-12 text-center md:hidden">
+      <Link href="/products">
+        <Button variant="outline" className="border-primary text-primary">
+          View All Products
+        </Button>
+      </Link>
+    </div>
+
+  </div>
+</section>
+
 
       {/* Why Choose Us */}
       <section className="py-20 bg-primary text-primary-foreground">
