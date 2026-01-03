@@ -1,6 +1,8 @@
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import { useCart } from "@/hooks/use-cart";
+import { Check } from "lucide-react";
 
 interface Product {
   id: number;
@@ -8,57 +10,77 @@ interface Product {
   category: string;
   image: string;
   description: string;
-  featured?: boolean;
+  price: number;
+  quantity: number;
 }
 
 interface ProductCardProps {
   product: Product;
+  highlighted?: boolean;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, highlighted }: ProductCardProps) {
+  const { addToCart } = useCart();
+  const [added, setAdded] = useState(false);
+
+  useEffect(() => {
+    if (highlighted) {
+      console.log("Highlighted:", product.id);
+    }
+  }, [highlighted, product.id]);
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      image: product.image,
+      description: product.description,
+      price: product.price,
+      quantity: 1,
+    });
+
+    setAdded(true);
+    setTimeout(() => setAdded(false), 900);
+  };
+
   return (
-    <Card className="group overflow-hidden border-none shadow-sm hover:shadow-md transition-shadow duration-300 bg-white">
-      
-      {/* IMAGE CONTAINER */}
-      <div className="relative aspect-[4/5] bg-gray-50 flex items-center justify-center overflow-hidden">
+    <Card className="bg-white shadow-sm">
+      <div className="p-4">
         <img
           src={product.image}
           alt={product.name}
-          className="
-            w-full 
-            h-full 
-            object-contain     /* ✅ FIT IMAGE */
-            p-4                /* ✅ SPACE AROUND IMAGE */
-            transition-transform 
-            duration-500 
-            group-hover:scale-105
-          "
+          className="w-full h-48 object-contain"
         />
 
-        {/* CATEGORY BADGE */}
-        <div className="absolute top-3 left-3">
-          <Badge
-            variant="secondary"
-            className="bg-white/90 text-primary hover:bg-white backdrop-blur-sm shadow-sm font-medium uppercase text-xs tracking-wider"
-          >
-            {product.category}
-          </Badge>
-        </div>
-      </div>
-
-      {/* TITLE */}
-      <CardHeader className="p-4 pb-0">
-        <h3 className="font-serif text-lg font-bold text-gray-900 group-hover:text-primary transition-colors line-clamp-1">
+        <h3 className="font-serif text-lg font-bold mt-2">
           {product.name}
         </h3>
-      </CardHeader>
 
-      {/* DESCRIPTION */}
-      <CardContent className="p-4 pt-2">
-        <p className="text-sm text-muted-foreground line-clamp-2">
+        {/* PRICE */}
+        <p className="text-lg font-semibold text-gray-800 mt-1">
+          ₹{(product.price ?? 0).toLocaleString("en-IN")}
+        </p>
+
+        <p className="text-sm text-muted-foreground mt-1">
           {product.description}
         </p>
-      </CardContent>
+
+        <Button
+          onClick={handleAddToCart}
+          className={`w-full mt-3 transition-all duration-300
+            ${added ? "bg-green-600 hover:bg-green-600 scale-105" : ""}
+          `}
+          disabled={added}
+        >
+          {added ? (
+            <span className="flex items-center gap-2 animate-fade-in">
+              <Check className="h-4 w-4" /> Added
+            </span>
+          ) : (
+            "Add to Cart"
+          )}
+        </Button>
+      </div>
     </Card>
   );
 }

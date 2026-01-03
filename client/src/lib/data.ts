@@ -60,6 +60,7 @@ export const PRODUCTS = [
     image: bindiImage1,
     description: 'Premium velvet bindis with stone work, perfect for bridal wear.',
     featured: true,
+    price: 10,
   },
   {
     id: 2,
@@ -68,6 +69,7 @@ export const PRODUCTS = [
     image: bindiImage2,
     description: 'Simple and elegant stone bindis for daily use. Available in multiple colors.',
     featured: false,
+    price: 10,
   },
   {
     id: 3,
@@ -76,6 +78,7 @@ export const PRODUCTS = [
     image: bindiImage3,
     description: 'Simple and elegant stone bindis for daily use. Available in multiple colors.',
     featured: false,
+    price: 10,
   },
   {
     id: 4,
@@ -84,6 +87,7 @@ export const PRODUCTS = [
     image: bindiImage4,
     description: 'Simple and elegant stone bindis for daily use. Available in multiple colors.',
     featured: false,
+    price: 10,
   },
   {
     id: 5,
@@ -92,6 +96,7 @@ export const PRODUCTS = [
     image: bindiImage5,
     description: 'Simple and elegant stone bindis for daily use. Available in multiple colors.',
     featured: false,
+    price: 10,
   },
   {
     id: 6,
@@ -100,6 +105,7 @@ export const PRODUCTS = [
     image: bindiImage6,
     description: 'Simple and elegant stone bindis for daily use. Available in multiple colors.',
     featured: false,
+    price: 10,
   },
   {
     id: 7,
@@ -108,6 +114,7 @@ export const PRODUCTS = [
     image: mangalsutraImage1,
     description: 'Traditional black bead mangalsutra with gold plated pendant.',
     featured: true,
+    price: 55,
   },
   {
     id: 8,
@@ -116,6 +123,7 @@ export const PRODUCTS = [
     image: mangalsutraImage2,
     description: 'Traditional black bead mangalsutra with gold plated pendant.',
     featured: true,
+    price: 55,
   },
   {
     id: 9,
@@ -124,6 +132,7 @@ export const PRODUCTS = [
     image: mangalsutraImage3,
     description: 'Traditional black bead mangalsutra with gold plated pendant.',
     featured: true,
+    price: 55,
   },
   {
     id: 10,
@@ -132,6 +141,7 @@ export const PRODUCTS = [
     image: earringsImage1,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 11,
@@ -140,6 +150,7 @@ export const PRODUCTS = [
     image: earringsImage2,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 12,
@@ -148,6 +159,7 @@ export const PRODUCTS = [
     image: earringsImage3,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 13,
@@ -156,6 +168,7 @@ export const PRODUCTS = [
     image: earringsImage4,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 14,
@@ -164,6 +177,7 @@ export const PRODUCTS = [
     image: earringsImage5,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 15,
@@ -172,6 +186,7 @@ export const PRODUCTS = [
     image: earringsImage6,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 16,
@@ -180,6 +195,7 @@ export const PRODUCTS = [
     image: earringsImage7,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 17,
@@ -188,6 +204,7 @@ export const PRODUCTS = [
     image: earringsImage8,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 18,
@@ -196,6 +213,7 @@ export const PRODUCTS = [
     image: earringsImage9,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 19,
@@ -204,6 +222,7 @@ export const PRODUCTS = [
     image: earringsImage10,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 20,
@@ -212,6 +231,7 @@ export const PRODUCTS = [
     image: earringsImage11,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 21,
@@ -220,6 +240,7 @@ export const PRODUCTS = [
     image: earringsImage12,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 22,
@@ -228,6 +249,7 @@ export const PRODUCTS = [
     image: earringsImage13,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 23,
@@ -236,6 +258,7 @@ export const PRODUCTS = [
     image: earringsImage14,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 24,
@@ -244,6 +267,7 @@ export const PRODUCTS = [
     image: earringsImage15,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 25,
@@ -252,6 +276,7 @@ export const PRODUCTS = [
     image: earringsImage16,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 26,
@@ -260,6 +285,7 @@ export const PRODUCTS = [
     image: earringsImage17,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 27,
@@ -268,6 +294,7 @@ export const PRODUCTS = [
     image: locketImage1,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 28,
@@ -276,6 +303,7 @@ export const PRODUCTS = [
     image: braceletImage1,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 29,
@@ -284,6 +312,7 @@ export const PRODUCTS = [
     image: braceletImage2,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 30,
@@ -292,6 +321,7 @@ export const PRODUCTS = [
     image: braceletImage3,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 31,
@@ -300,6 +330,7 @@ export const PRODUCTS = [
     image: braceletImage4,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 32,
@@ -308,6 +339,7 @@ export const PRODUCTS = [
     image: braceletImage5,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
   {
     id: 33,
@@ -316,6 +348,7 @@ export const PRODUCTS = [
     image: braceletImage6,
     description: 'Handcrafted antique finish jhumka earrings.',
     featured: true,
+    price: 11,
   },
 ];
 
@@ -324,6 +357,7 @@ export const MOCK_STATS = [
   { label: 'Pending Enquiries', value: '12' },
   { label: 'Total Views', value: '1.2k' },
 ];
+
 
 export const MOCK_ENQUIRIES = [
   { id: 1, name: 'Rahul Gupta', phone: '+91 9876543210', product: 'Bridal Velvet Bindi Set', date: '2023-10-25', status: 'Pending' },

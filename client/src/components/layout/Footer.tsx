@@ -14,7 +14,7 @@ export function Footer() {
               Varanasi's premier manufacturer & wholesaler of fancy bindi, traditional jewelry, and bridal ornaments.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href="#" className="hover:text-accent transition-colors"><Instagram className="h-5 w-5" /></a>
+              <a href="https://www.instagram.com/suhagbindistore/" className="hover:text-accent transition-colors"><Instagram className="h-5 w-5" /></a>
             </div>
           </div>
 
@@ -35,15 +35,23 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0" />
-                <span>Varanasi, Uttar Pradesh, India</span>
+                <span>Ck. 48/194 B1, Shahjaha Katra Saraiharaha, Varanasi.01</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-accent shrink-0" />
+                <span>Ck. 63/67,Harahabeer Mandeer Ke Pass, Varanasi.01</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 63867 85621</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-5 w-5 text-accent shrink-0" />
+                <span>+91 95598 08586</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent shrink-0" />
-                <span>info@suhagbindi.com</span>
+                <span>suhagbindistore@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -67,7 +75,7 @@ export function Footer() {
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/60">
           <p>© 2024 Suhag Bindi Store. All rights reserved.</p>
           <div className="flex gap-6">
-            <span>GSTIN: 09ABCDE1234F1Z5</span>
+            <span>GSTIN: 09ABDPV695D1Z5</span>
             <a href="/admin/login" className="hover:text-accent">Admin Login</a>
           </div>
         </div>
